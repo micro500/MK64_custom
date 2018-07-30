@@ -457,6 +457,11 @@ new_rom_data = mem_write_u16_be(0x6FD92, 0x33, new_rom_data)
 # update minimap offset y
 new_rom_data = mem_write_u16_be(0x6FDA2, 0x0B, new_rom_data)
 
+# Allow same character selection
+new_rom_data = mem_write_u32_be(0x0B4524, 0, new_rom_data)
+new_rom_data = mem_write_u32_be(0x0B45A4, 0, new_rom_data)
+new_rom_data = mem_write_u32_be(0x0B4638, 0x1000FFBA, new_rom_data)
+
 new_rom_data = fix_checksum(new_rom_data)
 
 with open("MK64_Micro_Mountain.z64",'wb') as outfile:
