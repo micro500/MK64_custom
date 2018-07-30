@@ -1,6 +1,6 @@
 #### To generate the patched rom from the binary files/release zip:
 1. Copy the US Mario Kart 64 rom into the directory and name it "Mario Kart 64 (U) [!].z64". Note that your rom must be in z64 format.
-2. Run CM_import_level.py
+2. Run CM_import_level.py. You will need Python 3.x
 3. You should end up with MK64_Micro_Mountain.z64
 
 
